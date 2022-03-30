@@ -35,6 +35,7 @@ public class UserRestController {
     private final UserValidator userValidator;
     private final AwsS3Service awsS3Service;
 
+    //채팅방, 알림이 없음
     //1번 API 로그인 구현하기(완료)
     @PostMapping("/user/login")
     public UserResponseDto.Login Login(@RequestBody UserRequestDto.Login userLoginRequest, HttpServletResponse res) {
